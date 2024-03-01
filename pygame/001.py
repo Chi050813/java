@@ -1,10 +1,14 @@
 import turtle
+sides = int(input("Enter the number of sides for your shape: "))
+angle = 360.0 / sides
+length = 400.0 / sides
 
-i = 0
-length = 10
-angle = 90
-while i <20:
+turtle.fillcolor("blue")
+turtle.begin_fill()
+
+for side in range(sides):
     turtle.forward(length)
-    turtle.left(angle)
-    length = length+ 10
-    i += 1
+    turtle.right(angle)
+
+turtle.end_fill()
+turtle.done()

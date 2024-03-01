@@ -1,7 +1,7 @@
 import time
-shipName = "After"
-captain = "chi"
-location = "Earth"
+shipName = "Chin is best"
+captain = "Chin"
+location = "North Korea"
 password = "password"
 
 pAttempt = input("Enter the password: ")
