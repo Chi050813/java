@@ -1,37 +1,13 @@
-import turtle
-def drawShape(sides, length):
-    angle = 360.0 / sides
-    for side in range(sides):
-        turtle.forward(length)
-        turtle.right(angle)
+import tkinter as tk
+window = tk.Tk()
 
-def moveTurtle(x, y):
-    turtle.penup()
-    turtle.goto(x, y)
-    turtle.pendown()
+count = 0
 
-def drawSquare(length):
-    drawShape(4 , length)
+def buttomClick():
+    global count
+    count += 1
+    buttom.config(text=str(count))
 
-def drawTriangle(length):
-    drawShape(3 , length)
-
-def drawCircle(length):
-    drawShape(360 , length)
-
-drawShape(4, 10)
-moveTurtle(60, 30)
-turtle.color("blue")
-drawShape(3, 20)
-moveTurtle(-100, 20)
-turtle.color("red")
-drawSquare(30)
-moveTurtle(- 10, 20)
-drawCircle(1)
-turtle.color("green")
-drawCircle(2)
-turtle.color("blue")
-moveTurtle(75, -75)
-drawTriangle(60)
-
-turtle.done()
+buttom = tk.Button(window, text="Click me!", command=buttomClick)
+buttom.pack()
+window.mainloop()
