@@ -1,14 +1,37 @@
 import turtle
-sides = int(input("Enter the number of sides for your shape: "))
-angle = 360.0 / sides
-length = 400.0 / sides
+def drawShape(sides, length):
+    angle = 360.0 / sides
+    for side in range(sides):
+        turtle.forward(length)
+        turtle.right(angle)
 
-turtle.fillcolor("blue")
-turtle.begin_fill()
+def moveTurtle(x, y):
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
 
-for side in range(sides):
-    turtle.forward(length)
-    turtle.right(angle)
+def drawSquare(length):
+    drawShape(4 , length)
 
-turtle.end_fill()
+def drawTriangle(length):
+    drawShape(3 , length)
+
+def drawCircle(length):
+    drawShape(360 , length)
+
+drawShape(4, 10)
+moveTurtle(60, 30)
+turtle.color("blue")
+drawShape(3, 20)
+moveTurtle(-100, 20)
+turtle.color("red")
+drawSquare(30)
+moveTurtle(- 10, 20)
+drawCircle(1)
+turtle.color("green")
+drawCircle(2)
+turtle.color("blue")
+moveTurtle(75, -75)
+drawTriangle(60)
+
 turtle.done()
