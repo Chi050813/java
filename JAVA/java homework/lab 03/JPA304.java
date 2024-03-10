@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class JPA04 {
+public class JPA304 {
     public static void main(String[] args){
         Scanner money = new Scanner(System.in);
         float total = 0;

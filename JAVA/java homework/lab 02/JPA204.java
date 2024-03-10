@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class JPA04 {
+public class JPA204 {
     public static void main(String[] args) {
         Scanner numberinput = new Scanner(System.in);
         int count = 0;

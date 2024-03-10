@@ -1,4 +1,4 @@
-public class JPA03 {
+public class JPA303 {
     public static void main(String[] args){
         System.out.printf("1~1000中的完美數有：");
         for(int i = 1; i < 1001; i++){

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class JPA06 {
+public class JPA206 {
     public static void main(String[] args) {
         int i = 0;
         Scanner score = new Scanner(System.in);

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class JPA01{
+public class JPA301{
     public static void main(String[] args){
         Scanner number = new Scanner(System.in);
         System.out.println("Input：");

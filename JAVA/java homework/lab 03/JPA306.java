@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class JPA06 {
+public class JPA306 {
     public static void main(String[] args){
         Scanner number = new Scanner(System.in);
         while(true){

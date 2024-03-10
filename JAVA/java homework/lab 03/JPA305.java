@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class JPA05 {
+public class JPA305 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         for(int i = 1; i < 4; i++){
