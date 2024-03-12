@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class JPA208 {
     public static void main(String[] args){
         Scanner scoreinput = new Scanner(System.in);
-        int count = 0;
-        while(count != 5){
+        for(int i=0; i < 5; i++){
             System.out.println("Input：");
             int score = scoreinput.nextInt();
             if (score >= 90){
@@ -22,7 +21,6 @@ public class JPA208 {
             else {
                 System.out.println("Your grade is F");
             }
-            count += 1;
         }
         scoreinput.close();
     }

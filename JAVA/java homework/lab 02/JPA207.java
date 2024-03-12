@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class JPA207 {
     public static void main(String[] args){
         Scanner number = new Scanner(System.in);
-        int count = 0;
-        while(count != 4){
+        for(int i = 0; i < 4; i++){
             System.out.print("請輸入三個整數：");
             int number1 = number.nextInt();
             int number2 = number.nextInt();
@@ -21,7 +20,6 @@ public class JPA207 {
             else{
                 System.out.println("銳角三角形");
             }
-            count += 1;
         }
         number.close();
     }

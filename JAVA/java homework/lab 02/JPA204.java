@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class JPA204 {
     public static void main(String[] args) {
         Scanner numberinput = new Scanner(System.in);
-        int count = 0;
-        while(count != 2){
+        for(int i = 0; i < 2; i++) {
             System.out.println("Input：");
             int number = numberinput.nextInt();
             if (number % 5 == 0 && number % 9 == 0) {
@@ -13,7 +12,6 @@ public class JPA204 {
             else {
                 System.out.println("No");
             }
-            count += 1;
         }
         numberinput.close();
     }

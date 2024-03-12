@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class JPA203 {
     public static void main(String[] args){
         Scanner numberinput = new Scanner(System.in);
-        int count = 0;
-        while(count != 2){
+        for(int i = 0; i < 2 ; i++){
             System.out.println("Input an integer：");
             int number = numberinput.nextInt();
             if(number % 2 == 0){
@@ -13,7 +12,6 @@ public class JPA203 {
             else{
                 System.out.println("The number is odd.");
             }
-            count += 1;
         }
         numberinput.close();
     }
