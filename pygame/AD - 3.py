@@ -2,7 +2,7 @@ import tkinter as tk
 import random
 window = tk.Tk()
 
-maxNo = 100
+maxNo = 99
 score = 0
 scoreall = 0
 
