@@ -12,6 +12,7 @@ def buttonClick():
     global score
     global scoreall
     try:
+        score = 0
         guess = int(guessBox.get())
         if 0 <= guess <= maxNo:
             result =random.randrange(0, maxNo + 1)
