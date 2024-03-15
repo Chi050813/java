@@ -1,2 +1,3 @@
-i = 11
-print(i/10)
+import tkinter as tk
+window = tk.Tk
+

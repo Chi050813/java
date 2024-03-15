@@ -5,8 +5,10 @@ window = tk.Tk()
 maxNo = 99
 score = 0
 scoreall = 0
+guess = 0
 
 def buttonClick():
+    global guess
     global score
     global scoreall
     try:
@@ -26,6 +28,7 @@ def buttonClick():
             result = "Entry not valid"
     except:
         result = "Entry not valid"
+    guessnumberLabel.config(text = "Your guess number = " + str(guess))
     resultLabel.config(text = "Random number = " + str(result))
     scoreLabel.config(text = "Score = " + str(score))
     scoreallLabel.config(text = "Scoreall = " + str(scoreall))
@@ -33,6 +36,7 @@ def buttonClick():
 
 guessLabel = tk.Label(window , text = "Enter a number from 10 to " + str(maxNo))
 guessBox = tk.Entry(window)
+guessnumberLabel = tk.Label(window , text = "Your guess number = " + str(guess))
 resultLabel = tk.Label(window , text = "Random number = ")
 scoreLabel = tk.Label(window , text = "Score = " + str(score))
 scoreallLabel = tk.Label(window , text = "Scoreall = " + str(scoreall))
@@ -40,6 +44,7 @@ button = tk.Button(window , text = "guess" , command = buttonClick)
 
 guessLabel.pack()
 guessBox.pack()
+guessnumberLabel.pack()
 resultLabel.pack()
 scoreLabel.pack()
 scoreallLabel.pack()
