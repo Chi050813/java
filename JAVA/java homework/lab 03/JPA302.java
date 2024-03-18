@@ -1,8 +1,12 @@
 public class JPA302 {
     public static void main(String[] args){
-        for (int i = 1; i < 28; i++){
-            if (i == 27){
-            System.out.printf("count = %d" , i);
+        int count = 0;
+        for (int i = 1; i <= 3; i++){
+            for (int j = 1; j <= 9; j++) {
+                count += 1;
+                if (count == 27){
+                    System.out.printf("count = %d" , count);
+                }
             }
         }
     }
